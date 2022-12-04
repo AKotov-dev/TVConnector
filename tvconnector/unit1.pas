@@ -59,7 +59,7 @@ var
 begin
   //Запуск скрипта обнаружения дисплеев
   RunCommand('/bin/bash', ['-c', '"' + ExtractFileDir(Application.ExeName) +
-    '/start.sh' + '"'], s);
+    '/getprimary.sh' + '"'], s);
 
   //Primary-Дисплей существует?
   RunCommand('/bin/bash', ['-c', 'xrandr --listactivemonitors | grep "\*"'], s);
