@@ -1,4 +1,4 @@
-# TV-Connector
+# TVConnector
 XRandR is used. The program is designed to quickly connect the TV as an additional display.
 
 **Dependencies:** xrandr gtk2

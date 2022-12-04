@@ -3,7 +3,7 @@ object MainForm: TMainForm
   Height = 240
   Top = 124
   Width = 501
-  Caption = 'TV-Connector'
+  Caption = 'TVConnector'
   ClientHeight = 240
   ClientWidth = 501
   OnCreate = FormCreate

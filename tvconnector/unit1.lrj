@@ -1,5 +1,5 @@
 {"version":1,"strings":[
-{"hash":47362306,"name":"tmainform.caption","sourcebytes":[84,86,45,67,111,110,110,101,99,116,111,114],"value":"TV-Connector"},
+{"hash":85065986,"name":"tmainform.caption","sourcebytes":[84,86,67,111,110,110,101,99,116,111,114],"value":"TVConnector"},
 {"hash":215885380,"name":"tmainform.setbtn.hint","sourcebytes":[65,112,112,108,121,32,97,110,100,32,99,114,101,97,116,101,32,97,110,32,65,117,116,111,115,116,97,114,116,32,115,104,111,114,116,99,117,116],"value":"Apply and create an Autostart shortcut"},
 {"hash":22980,"name":"tmainform.setbtn.caption","sourcebytes":[83,101,116],"value":"Set"},
 {"hash":17240180,"name":"tmainform.resetbtn.hint","sourcebytes":[82,101,115,101,116,32,116,104,101,32,115,101,116,116,105,110,103,115,32,111,102,32,116,104,101,32,115,101,99,111,110,100,97,114,121,32,100,105,115,112,108,97,121,10,97,110,100,32,114,101,109,111,118,101,32,116,104,101,32,65,117,116,111,115,116,97,114,116,32,115,104,111,114,116,99,117,116],"value":"Reset the settings of the secondary display\nand remove the Autostart shortcut"},
