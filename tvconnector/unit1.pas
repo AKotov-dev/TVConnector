@@ -19,16 +19,16 @@ type
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
-    SpeedButton1: TSpeedButton;
-    SpeedButton2: TSpeedButton;
-    SpeedButton3: TSpeedButton;
+    SetBtn: TSpeedButton;
+    ResetBtn: TSpeedButton;
+    ChangeBtn: TSpeedButton;
     StaticText1: TStaticText;
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure SpeedButton1Click(Sender: TObject);
-    procedure SpeedButton2Click(Sender: TObject);
+    procedure SetBtnClick(Sender: TObject);
+    procedure ResetBtnClick(Sender: TObject);
     procedure CheckAutoStart;
-    procedure SpeedButton3Click(Sender: TObject);
+    procedure ChangeBtnClick(Sender: TObject);
     procedure GetDisplayAndStatistic;
 
   private
@@ -87,22 +87,20 @@ begin
 
   //Установка размеров формы
   MainForm.Width := Label3.Left + Label3.Width + 50;
-  MainForm.Height := Label3.Top + Label3.Height + 30;
+  MainForm.Height := Label3.Top + Label3.Height + StaticText1.Height + 10;
 end;
-
 
 //Проверка Автостарта
 procedure TMainForm.CheckAutoStart;
 begin
   //Автостарт присутствует?
   if FileExists(GetUserDir + '.config/autostart/tv-display.desktop') then
-    Label2.Caption := SAutoStart + GetUserDir +
-      '.config/autostart/tv-display.desktop'
+    Label2.Caption := SAutoStart + '~/.config/autostart/tv-display.desktop'
   else
     Label2.Caption := SAutoStartNone;
 end;
 
-procedure TMainForm.SpeedButton3Click(Sender: TObject);
+procedure TMainForm.ChangeBtnClick(Sender: TObject);
 var
   s: ansistring;
   dtv: string;
@@ -148,7 +146,7 @@ begin
   GetDisplayAndStatistic;
 end;
 
-procedure TMainForm.SpeedButton1Click(Sender: TObject);
+procedure TMainForm.SetBtnClick(Sender: TObject);
 var
   s: ansistring;
   L: TStringList;
@@ -205,7 +203,7 @@ begin
 end;
 
 //Сброс дополнительного дисплея
-procedure TMainForm.SpeedButton2Click(Sender: TObject);
+procedure TMainForm.ResetBtnClick(Sender: TObject);
 var
   s: ansistring;
   dtv: string;

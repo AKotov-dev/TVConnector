@@ -16,6 +16,18 @@ msgstr ""
 msgid "TV-Connector"
 msgstr ""
 
+#: tmainform.changebtn.caption
+#, fuzzy
+msgctxt "tmainform.changebtn.caption"
+msgid "< Change >"
+msgstr "< Заменить >"
+
+#: tmainform.changebtn.hint
+#, fuzzy
+msgctxt "tmainform.changebtn.hint"
+msgid "Make another display"
+msgstr "Сделать активным другой дисплей"
+
 #: tmainform.checkbox1.caption
 msgid "Scale the display"
 msgstr "Масштабирование дисплея"
@@ -42,19 +54,15 @@ msgstr ""
 "2. Если экран TV при масштабировании отобразил содержимое\n"
 "    основного дисплея не полностью, нажмите Set повторно"
 
-#: tmainform.speedbutton1.caption
-msgid "Set"
-msgstr ""
-
-#: tmainform.speedbutton1.hint
-msgid "Apply and create an Autostart shortcut"
-msgstr "Применить и сделать ярлык Автостарта"
-
-#: tmainform.speedbutton2.caption
+#: tmainform.resetbtn.caption
+#, fuzzy
+msgctxt "tmainform.resetbtn.caption"
 msgid "Reset"
 msgstr "Сброс"
 
-#: tmainform.speedbutton2.hint
+#: tmainform.resetbtn.hint
+#, fuzzy
+msgctxt "tmainform.resetbtn.hint"
 msgid ""
 "Reset the settings of the secondary display\n"
 "and remove the Autostart shortcut"
@@ -62,13 +70,16 @@ msgstr ""
 "Сбросить настройки дополнительного\n"
 "дисплея и удалить ярлык Автозапуска"
 
-#: tmainform.speedbutton3.caption
-msgid "< Change >"
-msgstr "< Заменить >"
+#: tmainform.setbtn.caption
+msgctxt "tmainform.setbtn.caption"
+msgid "Set"
+msgstr ""
 
-#: tmainform.speedbutton3.hint
-msgid "Make another display"
-msgstr "Сделать активным другой дисплей"
+#: tmainform.setbtn.hint
+#, fuzzy
+msgctxt "tmainform.setbtn.hint"
+msgid "Apply and create an Autostart shortcut"
+msgstr "Применить и сделать ярлык Автостарта"
 
 #: tmainform.statictext1.caption
 msgid "License: GPLv3   Author: alex_q_2000 (C) 2022   URL: https://linuxforum.ru"
@@ -93,3 +104,4 @@ msgstr "Второй монитор не найден!"
 #: unit1.sscalethedisplay
 msgid "Scale the display "
 msgstr "Масштабирование дисплея: "
+

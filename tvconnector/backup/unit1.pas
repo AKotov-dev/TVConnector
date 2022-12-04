@@ -19,16 +19,16 @@ type
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
-    SpeedButton1: TSpeedButton;
-    SpeedButton2: TSpeedButton;
-    SpeedButton3: TSpeedButton;
+    SetBtn: TSpeedButton;
+    ResetBtn: TSpeedButton;
+    ChangeBtn: TSpeedButton;
     StaticText1: TStaticText;
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure SpeedButton1Click(Sender: TObject);
-    procedure SpeedButton2Click(Sender: TObject);
+    procedure SetBtnClick(Sender: TObject);
+    procedure ResetBtnClick(Sender: TObject);
     procedure CheckAutoStart;
-    procedure SpeedButton3Click(Sender: TObject);
+    procedure ChangeBtnClick(Sender: TObject);
     procedure GetDisplayAndStatistic;
 
   private
@@ -55,7 +55,8 @@ implementation
 { TMainForm }
 
 procedure TMainForm.GetDisplayAndStatistic;
-var s: ansistring;
+var
+  s: ansistring;
 begin
   //Запуск скрипта обнаружения дисплеев
   RunCommand('/bin/bash', ['-c', '"' + ExtractFileDir(Application.ExeName) +
@@ -86,7 +87,7 @@ begin
 
   //Установка размеров формы
   MainForm.Width := Label3.Left + Label3.Width + 50;
-  MainForm.Height := Label3.Top + Label3.Height + 30;
+  MainForm.Height := Label3.Top + Label3.Height + StaticText1.Height + 10;
 end;
 
 
@@ -101,7 +102,7 @@ begin
     Label2.Caption := SAutoStartNone;
 end;
 
-procedure TMainForm.SpeedButton3Click(Sender: TObject);
+procedure TMainForm.ChangeBtnClick(Sender: TObject);
 var
   s: ansistring;
   dtv: string;
@@ -144,10 +145,10 @@ begin
   DeleteFile(GetUserDir + '.config/tvconnector/disp');
   DeleteFile(GetUserDir + '.config/tvconnector/list0');
 
-GetDisplayAndStatistic;
+  GetDisplayAndStatistic;
 end;
 
-procedure TMainForm.SpeedButton1Click(Sender: TObject);
+procedure TMainForm.SetBtnClick(Sender: TObject);
 var
   s: ansistring;
   L: TStringList;
@@ -204,12 +205,14 @@ begin
 end;
 
 //Сброс дополнительного дисплея
-procedure TMainForm.SpeedButton2Click(Sender: TObject);
+procedure TMainForm.ResetBtnClick(Sender: TObject);
 var
   s: ansistring;
   dtv: string;
 begin
   Application.ProcessMessages;
+
+  CheckBox1.Checked := False;
 
   //Узнаём имя TV-дисплея
   RunCommand('/bin/bash', ['-c', 'cat ~/.config/tvconnector/disp | tail -n1'], s);

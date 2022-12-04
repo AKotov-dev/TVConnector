@@ -1,16 +1,16 @@
 object MainForm: TMainForm
   Left = 307
-  Height = 247
+  Height = 269
   Top = 124
   Width = 501
   Caption = 'TV-Connector'
-  ClientHeight = 247
+  ClientHeight = 269
   ClientWidth = 501
   OnCreate = FormCreate
   OnShow = FormShow
   SessionProperties = 'CheckBox1.Checked;Top;Left'
   LCLVersion = '2.2.0.4'
-  object SpeedButton1: TSpeedButton
+  object SetBtn: TSpeedButton
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     Left = 388
@@ -21,11 +21,11 @@ object MainForm: TMainForm
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 5
     Caption = 'Set'
-    OnClick = SpeedButton1Click
+    OnClick = SetBtnClick
     ShowHint = True
     ParentShowHint = False
   end
-  object SpeedButton2: TSpeedButton
+  object ResetBtn: TSpeedButton
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     Left = 388
@@ -36,14 +36,14 @@ object MainForm: TMainForm
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 5
     Caption = 'Reset'
-    OnClick = SpeedButton2Click
+    OnClick = ResetBtnClick
     ShowHint = True
     ParentShowHint = False
   end
   object StaticText1: TStaticText
     Left = 0
     Height = 20
-    Top = 227
+    Top = 249
     Width = 501
     Align = alBottom
     BorderStyle = sbsSunken
@@ -91,7 +91,7 @@ object MainForm: TMainForm
     AnchorSideTop.Side = asrBottom
     Left = 8
     Height = 85
-    Top = 128
+    Top = 154
     Width = 477
     BorderSpacing.Top = 4
     Caption = '1. Make sure that the main display is selected correctly, it is marked'#10'    with a +* (see the list of monitors above)'#10'  '#10'2. If the TV screen does not fully display the contents of the main display'#10'    when zooming, press Set again'
@@ -103,13 +103,13 @@ object MainForm: TMainForm
   end
   object Bevel1: TBevel
     AnchorSideLeft.Control = Owner
-    AnchorSideTop.Control = Label2
+    AnchorSideTop.Control = ResetBtn
     AnchorSideTop.Side = asrBottom
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     Left = 8
     Height = 14
-    Top = 110
+    Top = 136
     Width = 485
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Left = 8
@@ -117,7 +117,7 @@ object MainForm: TMainForm
     BorderSpacing.Right = 8
     Shape = bsTopLine
   end
-  object SpeedButton3: TSpeedButton
+  object ChangeBtn: TSpeedButton
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     Left = 388
@@ -128,7 +128,7 @@ object MainForm: TMainForm
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 5
     Caption = '< Change >'
-    OnClick = SpeedButton3Click
+    OnClick = ChangeBtnClick
     ShowHint = True
     ParentShowHint = False
   end

@@ -5,6 +5,16 @@ msgstr "Content-Type: text/plain; charset=UTF-8"
 msgid "TV-Connector"
 msgstr ""
 
+#: tmainform.changebtn.caption
+msgctxt "tmainform.changebtn.caption"
+msgid "< Change >"
+msgstr ""
+
+#: tmainform.changebtn.hint
+msgctxt "tmainform.changebtn.hint"
+msgid "Make another display"
+msgstr ""
+
 #: tmainform.checkbox1.caption
 msgid "Scale the display"
 msgstr ""
@@ -26,30 +36,26 @@ msgid ""
 "    when zooming, press Set again"
 msgstr ""
 
-#: tmainform.speedbutton1.caption
-msgid "Set"
-msgstr ""
-
-#: tmainform.speedbutton1.hint
-msgid "Apply and create an Autostart shortcut"
-msgstr ""
-
-#: tmainform.speedbutton2.caption
+#: tmainform.resetbtn.caption
+msgctxt "tmainform.resetbtn.caption"
 msgid "Reset"
 msgstr ""
 
-#: tmainform.speedbutton2.hint
+#: tmainform.resetbtn.hint
+msgctxt "tmainform.resetbtn.hint"
 msgid ""
 "Reset the settings of the secondary display\n"
 "and remove the Autostart shortcut"
 msgstr ""
 
-#: tmainform.speedbutton3.caption
-msgid "< Change >"
+#: tmainform.setbtn.caption
+msgctxt "tmainform.setbtn.caption"
+msgid "Set"
 msgstr ""
 
-#: tmainform.speedbutton3.hint
-msgid "Make another display"
+#: tmainform.setbtn.hint
+msgctxt "tmainform.setbtn.hint"
+msgid "Apply and create an Autostart shortcut"
 msgstr ""
 
 #: tmainform.statictext1.caption
