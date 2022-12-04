@@ -12,7 +12,7 @@ msgstr ""
 
 #: tmainform.changebtn.hint
 msgctxt "tmainform.changebtn.hint"
-msgid "Make another display"
+msgid "Make another display the primary one"
 msgstr ""
 
 #: tmainform.checkbox1.caption

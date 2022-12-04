@@ -23,8 +23,8 @@ msgstr "< Заменить >"
 
 #: tmainform.changebtn.hint
 msgctxt "tmainform.changebtn.hint"
-msgid "Make another display"
-msgstr "Сделать активным другой дисплей"
+msgid "Make another display the primary one"
+msgstr "Сделать основным другой дисплей"
 
 #: tmainform.checkbox1.caption
 msgid "Scale the display"
