@@ -90,14 +90,12 @@ begin
   MainForm.Height := Label3.Top + Label3.Height + StaticText1.Height + 10;
 end;
 
-
 //Проверка Автостарта
 procedure TMainForm.CheckAutoStart;
 begin
   //Автостарт присутствует?
   if FileExists(GetUserDir + '.config/autostart/tv-display.desktop') then
-    Label2.Caption := SAutoStart + GetUserDir +
-      '.config/autostart/tv-display.desktop'
+    Label2.Caption := SAutoStart + '~/.config/autostart/tv-display.desktop'
   else
     Label2.Caption := SAutoStartNone;
 end;

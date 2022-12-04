@@ -1,16 +1,7 @@
 #!/bin/bash
 
-clear
-
-#Список активных дисплеев (развернутый)
-xrandr -q | grep "[A-Z]" | grep -iEv "disconnected|screen" > ~/.config/tvconnector/disp
-
-#Поместить PRIMARY сверху и создать disp_tmp
-cat <(grep 'primary' ~/.config/tvconnector/disp) <(grep -v 'primary' ~/.config/tvconnector/disp) | cut -f1 -d" " \
-> ~/.config/tvconnector/disp_tmp
-
-#Создать сортированный disp (primary сверху для list0)
-mv -f ~/.config/tvconnector/disp_tmp ~/.config/tvconnector/disp
+#Список активных дисплеев, Primary всегда сверху (0:)
+xrandr --listactivemonitors | grep -ivE "mon" | cut -f6 -d" " > ~/.config/tvconnector/disp
 
 #Индекс списков
 primary=$(cat ~/.config/tvconnector/disp | head -n1)

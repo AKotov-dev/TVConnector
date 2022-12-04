@@ -17,13 +17,11 @@ msgid "TV-Connector"
 msgstr ""
 
 #: tmainform.changebtn.caption
-#, fuzzy
 msgctxt "tmainform.changebtn.caption"
 msgid "< Change >"
 msgstr "< Заменить >"
 
 #: tmainform.changebtn.hint
-#, fuzzy
 msgctxt "tmainform.changebtn.hint"
 msgid "Make another display"
 msgstr "Сделать активным другой дисплей"
@@ -55,13 +53,11 @@ msgstr ""
 "    основного дисплея не полностью, нажмите Set повторно"
 
 #: tmainform.resetbtn.caption
-#, fuzzy
 msgctxt "tmainform.resetbtn.caption"
 msgid "Reset"
 msgstr "Сброс"
 
 #: tmainform.resetbtn.hint
-#, fuzzy
 msgctxt "tmainform.resetbtn.hint"
 msgid ""
 "Reset the settings of the secondary display\n"
@@ -76,7 +72,6 @@ msgid "Set"
 msgstr ""
 
 #: tmainform.setbtn.hint
-#, fuzzy
 msgctxt "tmainform.setbtn.hint"
 msgid "Apply and create an Autostart shortcut"
 msgstr "Применить и сделать ярлык Автостарта"
@@ -103,5 +98,4 @@ msgstr "Второй монитор не найден!"
 
 #: unit1.sscalethedisplay
 msgid "Scale the display "
-msgstr "Масштабирование дисплея: "
-
+msgstr "Масштабирование дисплея "
