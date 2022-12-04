@@ -74,7 +74,7 @@ msgstr ""
 #: tmainform.setbtn.hint
 msgctxt "tmainform.setbtn.hint"
 msgid "Apply and create an Autostart shortcut"
-msgstr "Применить и создать ярлык Автостарта"
+msgstr "Применить и создать ярлык Автозапуска"
 
 #: tmainform.statictext1.caption
 msgid "License: GPLv3   Author: alex_q_2000 (C) 2022   URL: https://linuxforum.ru"
