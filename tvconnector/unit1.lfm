@@ -1,10 +1,10 @@
 object MainForm: TMainForm
   Left = 307
-  Height = 269
+  Height = 240
   Top = 124
   Width = 501
   Caption = 'TV-Connector'
-  ClientHeight = 269
+  ClientHeight = 240
   ClientWidth = 501
   OnCreate = FormCreate
   OnShow = FormShow
@@ -43,7 +43,7 @@ object MainForm: TMainForm
   object StaticText1: TStaticText
     Left = 0
     Height = 20
-    Top = 249
+    Top = 220
     Width = 501
     Align = alBottom
     BorderStyle = sbsSunken
@@ -91,9 +91,9 @@ object MainForm: TMainForm
     AnchorSideTop.Side = asrBottom
     Left = 8
     Height = 85
-    Top = 148
+    Top = 122
     Width = 477
-    BorderSpacing.Top = 4
+    BorderSpacing.Top = 2
     Caption = '1. Make sure that the main display is selected correctly, it is marked'#10'    with a +* (see the list of monitors above)'#10'  '#10'2. If the TV screen does not fully display the contents of the main display'#10'    when zooming, press Set again'
     Font.Color = clGreen
     Font.Height = -13
@@ -109,11 +109,11 @@ object MainForm: TMainForm
     AnchorSideRight.Side = asrBottom
     Left = 8
     Height = 14
-    Top = 130
+    Top = 106
     Width = 485
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Left = 8
-    BorderSpacing.Top = 32
+    BorderSpacing.Top = 8
     BorderSpacing.Right = 8
     Shape = bsTopLine
   end
