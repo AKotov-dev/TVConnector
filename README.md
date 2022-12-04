@@ -13,4 +13,4 @@ XRandr is used. XRandr is used. The program is designed to quickly connect the T
 
 Motivation:
 --
-Often, when installing Linux for friends and acquaintances, there was a need to configure collaboration with TV, as with an additional display. The analogue of this program - `ARandr` does not have a `scaling mode`, which in some cases is necessary.
+Often, when installing Linux for friends and acquaintances, there was a need to configure collaboration with TV, as with an additional display. The analogue of this program - `ARandR` does not have a `scaling mode`, which in some cases is necessary.
