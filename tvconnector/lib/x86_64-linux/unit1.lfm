@@ -91,7 +91,7 @@ object MainForm: TMainForm
     AnchorSideTop.Side = asrBottom
     Left = 8
     Height = 85
-    Top = 154
+    Top = 148
     Width = 477
     BorderSpacing.Top = 4
     Caption = '1. Make sure that the main display is selected correctly, it is marked'#10'    with a +* (see the list of monitors above)'#10'  '#10'2. If the TV screen does not fully display the contents of the main display'#10'    when zooming, press Set again'
@@ -103,17 +103,17 @@ object MainForm: TMainForm
   end
   object Bevel1: TBevel
     AnchorSideLeft.Control = Owner
-    AnchorSideTop.Control = ResetBtn
+    AnchorSideTop.Control = Label2
     AnchorSideTop.Side = asrBottom
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     Left = 8
     Height = 14
-    Top = 136
+    Top = 130
     Width = 485
     Anchors = [akTop, akLeft, akRight]
     BorderSpacing.Left = 8
-    BorderSpacing.Top = 12
+    BorderSpacing.Top = 32
     BorderSpacing.Right = 8
     Shape = bsTopLine
   end

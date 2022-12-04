@@ -44,7 +44,6 @@ resourcestring
   SNoPrimaryDisplay = 'Primary display not found!';
   SNoSecondMonitor = 'The second monitor was not found!';
 
-
 var
   MainForm: TMainForm;
 
