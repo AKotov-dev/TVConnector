@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Список активных дисплеев, Primary всегда сверху (0:)
-xrandr --listactivemonitors | grep -ivE "mon" | cut -f6 -d" " > ~/.config/tvconnector/disp
+xrandr --listactivemonitors | grep -iv "monitor" | cut -f6 -d" " > ~/.config/tvconnector/disp
 
 #Индекс списков
 primary=$(cat ~/.config/tvconnector/disp | head -n1)
