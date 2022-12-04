@@ -1,0 +1,73 @@
+[NAME]
+name=tvconnector
+
+[VERSION]
+version=0.1
+
+[RELEASE]
+release=0.mrx9
+
+[GROUP]
+group=Accessibility
+
+[DESCRIPTION]
+0=Connecting an additional display (TV)
+1=---
+2=More information: /usr/share/doc/package_name/repack.txt
+
+[MAINTAINER]
+maintainer=Alex Kotov
+
+[VENDOR]
+vendor=alex_q_2000 (C) 2022
+
+[SUMMARY]
+summary=Connecting an additional display (TV)
+
+[URLCOPY]
+urlcopy=https://github.com/AKotov-dev/TVConnector
+
+[LICENSE]
+license=GPLv3
+
+[DEPS]
+deps=xrandr gtk2
+
+[META]
+meta=0
+
+[NOARCH]
+noarch=0
+
+[SIGN]
+sign=0
+
+[DEB]
+deb=0
+
+[FILES]
+0=/usr/share/tvconnector/
+1=/usr/share/icons/tvconnector.png
+2=/usr/share/applications/tvconnector.desktop
+3=/usr/share/doc/tvconnector/
+
+[URL32]
+url32=https://github.com/AKotov-dev/TVConnector
+
+[URL64]
+url64=
+
+[PROGRAMNAME]
+programname=TV-Connector
+
+[DEVTOOL]
+devtool=Lazarus
+
+[TOOLVERSION]
+toolversion=2.2.0
+
+[INFO]
+0=Connecting an additional display (TV)
+1=
+2=v0.1
+3=+ Initial release

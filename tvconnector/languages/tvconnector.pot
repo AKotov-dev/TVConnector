@@ -1,0 +1,78 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tmainform.caption
+msgid "TV-Connector"
+msgstr ""
+
+#: tmainform.checkbox1.caption
+msgid "Scale the display"
+msgstr ""
+
+#: tmainform.label1.caption
+msgid "Label1"
+msgstr ""
+
+#: tmainform.label2.caption
+msgid "Label2"
+msgstr ""
+
+#: tmainform.label3.caption
+msgid ""
+"1. Make sure that the main display is selected correctly, it is marked\n"
+"    with a +* (see the list of monitors above)\n"
+"  \n"
+"2. If the TV screen does not fully display the contents of the main display\n"
+"    when zooming, press Set again"
+msgstr ""
+
+#: tmainform.speedbutton1.caption
+msgid "Set"
+msgstr ""
+
+#: tmainform.speedbutton1.hint
+msgid "Apply and create an Autostart shortcut"
+msgstr ""
+
+#: tmainform.speedbutton2.caption
+msgid "Reset"
+msgstr ""
+
+#: tmainform.speedbutton2.hint
+msgid ""
+"Reset the settings of the secondary display\n"
+"and remove the Autostart shortcut"
+msgstr ""
+
+#: tmainform.speedbutton3.caption
+msgid "< Change >"
+msgstr ""
+
+#: tmainform.speedbutton3.hint
+msgid "Make another display"
+msgstr ""
+
+#: tmainform.statictext1.caption
+msgid "License: GPLv3   Author: alex_q_2000 (C) 2022   URL: https://linuxforum.ru"
+msgstr ""
+
+#: unit1.sautostart
+msgid "Autostart: "
+msgstr ""
+
+#: unit1.sautostartnone
+msgid "Autostart: none"
+msgstr ""
+
+#: unit1.snoprimarydisplay
+msgid "Primary display not found!"
+msgstr ""
+
+#: unit1.snosecondmonitor
+msgid "The second monitor was not found!"
+msgstr ""
+
+#: unit1.sscalethedisplay
+msgid "Scale the display "
+msgstr ""
+

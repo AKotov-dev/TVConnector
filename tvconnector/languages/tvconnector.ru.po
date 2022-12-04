@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: tmainform.caption
+msgid "TV-Connector"
+msgstr ""
+
+#: tmainform.checkbox1.caption
+msgid "Scale the display"
+msgstr "Масштабирование дисплея"
+
+#: tmainform.label1.caption
+msgid "Label1"
+msgstr ""
+
+#: tmainform.label2.caption
+msgid "Label2"
+msgstr ""
+
+#: tmainform.label3.caption
+msgid ""
+"1. Make sure that the main display is selected correctly, it is marked\n"
+"    with a +* (see the list of monitors above)\n"
+"  \n"
+"2. If the TV screen does not fully display the contents of the main display\n"
+"    when zooming, press Set again"
+msgstr ""
+"1. Убедитесь, что основной дисплей выбран верно, он отмечен знаком\n"
+"    +* (см. список мониторов выше)\n"
+"  \n"
+"2. Если экран TV при масштабировании отобразил содержимое\n"
+"    основного дисплея не полностью, нажмите Set повторно"
+
+#: tmainform.speedbutton1.caption
+msgid "Set"
+msgstr ""
+
+#: tmainform.speedbutton1.hint
+msgid "Apply and create an Autostart shortcut"
+msgstr "Применить и сделать ярлык Автостарта"
+
+#: tmainform.speedbutton2.caption
+msgid "Reset"
+msgstr "Сброс"
+
+#: tmainform.speedbutton2.hint
+msgid ""
+"Reset the settings of the secondary display\n"
+"and remove the Autostart shortcut"
+msgstr ""
+"Сбросить настройки дополнительного\n"
+"дисплея и удалить ярлык Автозапуска"
+
+#: tmainform.speedbutton3.caption
+msgid "< Change >"
+msgstr "< Заменить >"
+
+#: tmainform.speedbutton3.hint
+msgid "Make another display"
+msgstr "Сделать активным другой дисплей"
+
+#: tmainform.statictext1.caption
+msgid "License: GPLv3   Author: alex_q_2000 (C) 2022   URL: https://linuxforum.ru"
+msgstr "Лицензия: GPLv3   Автор: alex_q_2000 (C) 2022   URL: https://linuxforum.ru"
+
+#: unit1.sautostart
+msgid "Autostart: "
+msgstr "Автостарт: "
+
+#: unit1.sautostartnone
+msgid "Autostart: none"
+msgstr "Автостарт: нет"
+
+#: unit1.snoprimarydisplay
+msgid "Primary display not found!"
+msgstr "Основной дисплей не найден!"
+
+#: unit1.snosecondmonitor
+msgid "The second monitor was not found!"
+msgstr "Второй монитор не найден!"
+
+#: unit1.sscalethedisplay
+msgid "Scale the display "
+msgstr "Масштабирование дисплея: "
