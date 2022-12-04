@@ -5,7 +5,6 @@ XRandr is used. The program is designed to quickly connect the TV as an addition
 
 **Features:**
 + Combines image output to 2 monitors at once
-+ Works only with two displays: default and optional
 + Supports 2 modes: true resolution and scaling (`--scale-from`)
 + Creates a startup shortcut to apply the set parameters
 
