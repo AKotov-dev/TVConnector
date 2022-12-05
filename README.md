@@ -1,5 +1,5 @@
 # TVConnector
-XRandR is used. The program is designed to quickly connect the TV as an additional display.
+XRandR is used. Not for Wayland. The program is designed to quickly connect the TV as an additional display.
 
 **Dependencies:** xrandr gtk2
 
