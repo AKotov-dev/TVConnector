@@ -41,7 +41,6 @@ resourcestring
   SAutoStart = 'Autostart: ';
   SAutoStartNone = 'Autostart: none';
   SScaleTheDisplay = 'Scale the display ';
-  SNoPrimaryDisplay = 'Primary display not found!';
   SNoSecondMonitor = 'The second monitor was not found!';
 
 var
@@ -60,14 +59,6 @@ begin
   //Запуск скрипта обнаружения дисплеев
   RunCommand('/bin/bash', ['-c', '"' + ExtractFileDir(Application.ExeName) +
     '/getprimary.sh' + '"'], s);
-
-  //Primary-Дисплей существует?
-  RunCommand('/bin/bash', ['-c', 'xrandr --listactivemonitors | grep "\*"'], s);
-  if Trim(s) = '' then
-  begin
-    MessageDlg(SNoPrimaryDisplay, mtWarning, [mbOK], 0);
-    Application.Terminate;
-  end;
 
   //Вывод списка мониторов, если Монитор только 1 - выход
   RunCommand('/bin/bash', ['-c', 'xrandr --listactivemonitors'], s);
@@ -99,6 +90,7 @@ begin
     Label2.Caption := SAutoStartNone;
 end;
 
+//Меняем мониторы местами (0: -> 1:)
 procedure TMainForm.ChangeBtnClick(Sender: TObject);
 var
   s: ansistring;
@@ -135,13 +127,12 @@ begin
 end;
 
 procedure TMainForm.FormShow(Sender: TObject);
-var
-  s: ansistring;
 begin
   //Удаляем прежний список режимов TV
   DeleteFile(GetUserDir + '.config/tvconnector/disp');
   DeleteFile(GetUserDir + '.config/tvconnector/list0');
 
+  //Получаем статистику
   GetDisplayAndStatistic;
 end;
 
@@ -196,6 +187,9 @@ begin
 
     //Проверка Автостарта
     CheckAutoStart;
+
+    //Обновляем статистику
+    GetDisplayAndStatistic;
   finally
     L.Free;
   end;

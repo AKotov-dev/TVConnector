@@ -44,13 +44,13 @@ msgid ""
 "    with a +* (see the list of monitors above)\n"
 "  \n"
 "2. If the TV screen does not fully display the contents of the main display\n"
-"    when zooming, press Set again"
+"    when zooming, press \"Apply\" again"
 msgstr ""
 "1. Убедитесь, что основной дисплей выбран верно, он отмечен знаком\n"
 "    +* (см. список мониторов выше)\n"
 "  \n"
 "2. Если экран TV при масштабировании отобразил содержимое\n"
-"    основного дисплея не полностью, нажмите Set повторно"
+"    основного дисплея не полностью, нажмите \"Применить\" повторно"
 
 #: tmainform.resetbtn.caption
 msgctxt "tmainform.resetbtn.caption"
@@ -68,8 +68,8 @@ msgstr ""
 
 #: tmainform.setbtn.caption
 msgctxt "tmainform.setbtn.caption"
-msgid "Set"
-msgstr ""
+msgid "Apply"
+msgstr "Применить"
 
 #: tmainform.setbtn.hint
 msgctxt "tmainform.setbtn.hint"
@@ -88,10 +88,6 @@ msgstr "Автостарт: "
 msgid "Autostart: none"
 msgstr "Автостарт: нет"
 
-#: unit1.snoprimarydisplay
-msgid "Primary display not found!"
-msgstr "Основной дисплей не найден!"
-
 #: unit1.snosecondmonitor
 msgid "The second monitor was not found!"
 msgstr "Второй монитор не найден!"
@@ -99,4 +95,3 @@ msgstr "Второй монитор не найден!"
 #: unit1.sscalethedisplay
 msgid "Scale the display "
 msgstr "Масштабирование дисплея "
-
