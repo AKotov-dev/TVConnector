@@ -2,7 +2,7 @@
 name=tvconnector
 
 [VERSION]
-version=0.2
+version=0.3
 
 [RELEASE]
 release=0.mrx9
@@ -69,9 +69,14 @@ toolversion=2.2.0
 [INFO]
 0=Connecting an additional display (TV)
 1=
-2=v0.2
-3=+ Source code optimization
-4=+ Working directory: ~/.config/tvconnector
-5=
-6=v0.1
-7=+ Initial release
+2=v0.3
+3=+ Status of displays during autorun (control: yes/no)
+4=+ Improved selection of the Primary/Secondary display
+5=+ RPM packages for Mageia-8 and Mageia-9
+6=
+7=v0.2
+8=+ Source code optimization
+9=+ Working directory: ~/.config/tvconnector
+10=
+11=v0.1
+12=+ Initial release

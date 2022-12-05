@@ -10,7 +10,7 @@ object MainForm: TMainForm
   OnShow = FormShow
   SessionProperties = 'CheckBox1.Checked;Top;Left'
   LCLVersion = '2.2.0.4'
-  object SetBtn: TSpeedButton
+  object ApplyBtn: TSpeedButton
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     Left = 388
@@ -21,7 +21,7 @@ object MainForm: TMainForm
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 5
     Caption = 'Apply'
-    OnClick = SetBtnClick
+    OnClick = ApplyBtnClick
     ShowHint = True
     ParentShowHint = False
   end
@@ -31,7 +31,7 @@ object MainForm: TMainForm
     Left = 388
     Height = 35
     Hint = 'Reset the settings of the secondary display'#10'and remove the Autostart shortcut'
-    Top = 89
+    Top = 90
     Width = 108
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 5
@@ -94,7 +94,7 @@ object MainForm: TMainForm
     Top = 122
     Width = 477
     BorderSpacing.Top = 2
-    Caption = '1. Make sure that the main display is selected correctly, it is marked'#10'    with a +* (see the list of monitors above)'#10'  '#10'2. If the TV screen does not fully display the contents of the main display'#10'    when zooming, press "Apply" again'
+    Caption = '1. Make sure that the main display is selected correctly, it is marked'#10'    with a 0: +* (see the list of monitors above)'#10'  '#10'2. If the TV screen does not fully display the contents of the main display'#10'    when zooming, press "Apply" again'
     Font.Color = clGreen
     Font.Height = -13
     Font.Name = 'Sans'
@@ -123,7 +123,7 @@ object MainForm: TMainForm
     Left = 388
     Height = 35
     Hint = 'Make another display the primary one'
-    Top = 48
+    Top = 49
     Width = 108
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 5

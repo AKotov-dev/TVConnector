@@ -1,6 +1,16 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
+#: tmainform.applybtn.caption
+msgctxt "tmainform.applybtn.caption"
+msgid "Apply"
+msgstr ""
+
+#: tmainform.applybtn.hint
+msgctxt "tmainform.applybtn.hint"
+msgid "Apply and create an Autostart shortcut"
+msgstr ""
+
 #: tmainform.caption
 msgid "TVConnector"
 msgstr ""
@@ -30,7 +40,7 @@ msgstr ""
 #: tmainform.label3.caption
 msgid ""
 "1. Make sure that the main display is selected correctly, it is marked\n"
-"    with a +* (see the list of monitors above)\n"
+"    with a [0: +*] (see the list of monitors above)\n"
 "  \n"
 "2. If the TV screen does not fully display the contents of the main display\n"
 "    when zooming, press \"Apply\" again"
@@ -46,16 +56,6 @@ msgctxt "tmainform.resetbtn.hint"
 msgid ""
 "Reset the settings of the secondary display\n"
 "and remove the Autostart shortcut"
-msgstr ""
-
-#: tmainform.setbtn.caption
-msgctxt "tmainform.setbtn.caption"
-msgid "Apply"
-msgstr ""
-
-#: tmainform.setbtn.hint
-msgctxt "tmainform.setbtn.hint"
-msgid "Apply and create an Autostart shortcut"
 msgstr ""
 
 #: tmainform.statictext1.caption

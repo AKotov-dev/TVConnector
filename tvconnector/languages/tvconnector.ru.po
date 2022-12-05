@@ -12,6 +12,16 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 3.2.2\n"
 
+#: tmainform.applybtn.caption
+msgctxt "tmainform.applybtn.caption"
+msgid "Apply"
+msgstr "Применить"
+
+#: tmainform.applybtn.hint
+msgctxt "tmainform.applybtn.hint"
+msgid "Apply and create an Autostart shortcut"
+msgstr "Применить и создать ярлык Автозапуска"
+
 #: tmainform.caption
 msgid "TVConnector"
 msgstr ""
@@ -41,13 +51,13 @@ msgstr ""
 #: tmainform.label3.caption
 msgid ""
 "1. Make sure that the main display is selected correctly, it is marked\n"
-"    with a +* (see the list of monitors above)\n"
+"    with a [0: +*] (see the list of monitors above)\n"
 "  \n"
 "2. If the TV screen does not fully display the contents of the main display\n"
 "    when zooming, press \"Apply\" again"
 msgstr ""
 "1. Убедитесь, что основной дисплей выбран верно, он отмечен знаком\n"
-"    +* (см. список мониторов выше)\n"
+"    [0: +*] (см. список мониторов выше)\n"
 "  \n"
 "2. Если экран TV при масштабировании отобразил содержимое\n"
 "    основного дисплея не полностью, нажмите \"Применить\" повторно"
@@ -65,16 +75,6 @@ msgid ""
 msgstr ""
 "Сбросить настройки дополнительного\n"
 "дисплея и удалить ярлык Автозапуска"
-
-#: tmainform.setbtn.caption
-msgctxt "tmainform.setbtn.caption"
-msgid "Apply"
-msgstr "Применить"
-
-#: tmainform.setbtn.hint
-msgctxt "tmainform.setbtn.hint"
-msgid "Apply and create an Autostart shortcut"
-msgstr "Применить и создать ярлык Автозапуска"
 
 #: tmainform.statictext1.caption
 msgid "License: GPLv3   Author: alex_q_2000 (C) 2022   URL: https://linuxforum.ru"

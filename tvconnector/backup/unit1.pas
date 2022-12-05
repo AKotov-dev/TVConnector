@@ -19,13 +19,13 @@ type
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
-    SetBtn: TSpeedButton;
+    ApplyBtn: TSpeedButton;
     ResetBtn: TSpeedButton;
     ChangeBtn: TSpeedButton;
     StaticText1: TStaticText;
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure SetBtnClick(Sender: TObject);
+    procedure ApplyBtnClick(Sender: TObject);
     procedure ResetBtnClick(Sender: TObject);
     procedure CheckAutoStart;
     procedure ChangeBtnClick(Sender: TObject);
@@ -58,7 +58,6 @@ var
   s: ansistring;
 begin
   Application.ProcessMessages;
-  Screen.Cursor := crHourGlass;
 
   //Запуск скрипта обнаружения дисплеев
   RunCommand('/bin/bash', ['-c', '"' + ExtractFileDir(Application.ExeName) +
@@ -80,8 +79,6 @@ begin
   //Установка размеров формы
   MainForm.Width := Label3.Left + Label3.Width + 50;
   MainForm.Height := Label3.Top + Label3.Height + StaticText1.Height + 10;
-
-  Screen.Cursor := crDefault;
 end;
 
 //Проверка Автостарта
@@ -109,7 +106,9 @@ begin
   //Меняем местами
   RunCommand('/bin/bash', ['-c', 'xrandr --output ' + dtv + ' --primary'], s);
 
+  //Обновляем статистику и Применяем настройки
   GetDisplayAndStatistic;
+  ApplyBtn.Click;
 end;
 
 //Рабочая директория
@@ -142,7 +141,7 @@ begin
   GetDisplayAndStatistic;
 end;
 
-procedure TMainForm.SetBtnClick(Sender: TObject);
+procedure TMainForm.ApplyBtnClick(Sender: TObject);
 var
   s: ansistring;
   L: TStringList;
@@ -182,7 +181,8 @@ begin
     //Создаём ярлык автозапуска для установки настроек TV при перезагрузке
     L.Add('[Desktop Entry]');
     L.Add('Name=TV-Display');
-    L.Add('Exec=/bin/bash -c ' + '''' + command + '''');
+    L.Add('Exec=/bin/bash -c ' + '''' + '[[ $(xrandr --listactivemonitors | grep -E "' +
+      dtv + '.*' + dprim + '") ]] && ' + command + '''');
     L.Add('Type=Application');
     L.Add('Categories=Utility');
     L.Add('Terminal=false');
