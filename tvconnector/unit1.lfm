@@ -122,7 +122,7 @@ object MainForm: TMainForm
     AnchorSideRight.Side = asrBottom
     Left = 388
     Height = 35
-    Hint = 'Make another display the primary one'
+    Hint = 'Make another display the primary one and apply'
     Top = 49
     Width = 108
     Anchors = [akTop, akRight]
