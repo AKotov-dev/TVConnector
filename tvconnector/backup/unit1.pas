@@ -153,20 +153,14 @@ begin
       'cat ~/.config/tvconnector/disp | head -n1'], s);
     dprim := Trim(s);
 
-    showmessage(dprim);
-
     //Узнаём резолюцию Primary Display
     RunCommand('/bin/bash', ['-c',
       'cat ~/.config/tvconnector/list0 | head -n1'], s);
     rprim := Trim(s);
 
-    showmessage(rprim);
-
     //Узнаём имя TV-дисплея
     RunCommand('/bin/bash', ['-c', 'cat ~/.config/tvconnector/disp | tail -n1'], s);
     dtv := Trim(s);
-
-    showmessage(dtv);
 
     //Создаём команду
     if CheckBox1.Checked then

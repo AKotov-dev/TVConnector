@@ -178,7 +178,7 @@ begin
     //Создаём ярлык автозапуска для установки настроек TV при перезагрузке
     L.Add('[Desktop Entry]');
     L.Add('Name=TV-Display');
-    L.Add('Exec=bash -c ' + '''' + command + '''');
+    L.Add('Exec=/bin/bash -c ' + '''' + command + '''');
     L.Add('Type=Application');
     L.Add('Categories=Utility');
     L.Add('Terminal=false');
