@@ -4,7 +4,8 @@ XRandR is used. Not for Wayland. The program is designed to quickly connect the 
 **Dependencies:** xrandr gtk2
 
 **Features:**
-+ Combines image output to 2 monitors at once
++ Combines image output to 2 displays at once
++ Fast switching of displays (Primary/Secondary)
 + Supports 2 modes: true resolution and scaling (`--scale-from`)
 + Creates a startup shortcut to apply the set parameters
 
