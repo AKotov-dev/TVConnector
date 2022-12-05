@@ -57,6 +57,9 @@ procedure TMainForm.GetDisplayAndStatistic;
 var
   s: ansistring;
 begin
+  Application.ProcessMessages;
+  Screen.Cursor := crHourGlass;
+
   //Запуск скрипта обнаружения дисплеев
   RunCommand('/bin/bash', ['-c', '"' + ExtractFileDir(Application.ExeName) +
     '/getprimary.sh' + '"'], s);
@@ -77,6 +80,8 @@ begin
   //Установка размеров формы
   MainForm.Width := Label3.Left + Label3.Width + 50;
   MainForm.Height := Label3.Top + Label3.Height + StaticText1.Height + 10;
+
+  Screen.Cursor := crDefault;
 end;
 
 //Проверка Автостарта
@@ -149,8 +154,7 @@ begin
     Application.ProcessMessages;
 
     //Узнаём имя Primary Display
-    RunCommand('/bin/bash', ['-c',
-      'cat ~/.config/tvconnector/disp | head -n1'], s);
+    RunCommand('/bin/bash', ['-c', 'cat ~/.config/tvconnector/disp | head -n1'], s);
     dprim := Trim(s);
 
     //Узнаём резолюцию Primary Display
@@ -178,7 +182,7 @@ begin
     //Создаём ярлык автозапуска для установки настроек TV при перезагрузке
     L.Add('[Desktop Entry]');
     L.Add('Name=TV-Display');
-    L.Add('Exec=bash -c ' + '''' + command + '''');
+    L.Add('Exec=/bin/bash -c ' + '''' + command + '''');
     L.Add('Type=Application');
     L.Add('Categories=Utility');
     L.Add('Terminal=false');

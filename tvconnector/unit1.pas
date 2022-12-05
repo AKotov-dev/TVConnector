@@ -57,6 +57,8 @@ procedure TMainForm.GetDisplayAndStatistic;
 var
   s: ansistring;
 begin
+  Application.ProcessMessages;
+
   //Запуск скрипта обнаружения дисплеев
   RunCommand('/bin/bash', ['-c', '"' + ExtractFileDir(Application.ExeName) +
     '/getprimary.sh' + '"'], s);
@@ -149,8 +151,7 @@ begin
     Application.ProcessMessages;
 
     //Узнаём имя Primary Display
-    RunCommand('/bin/bash', ['-c',
-      'cat ~/.config/tvconnector/disp | head -n1'], s);
+    RunCommand('/bin/bash', ['-c', 'cat ~/.config/tvconnector/disp | head -n1'], s);
     dprim := Trim(s);
 
     //Узнаём резолюцию Primary Display
