@@ -150,12 +150,12 @@ begin
 
     //Узнаём имя Primary Display
     RunCommand('/bin/bash', ['-c',
-      'cat ~/.config/tvconnector/disp | head -n1 | cut -f1 -d" "'], s);
+      'cat ~/.config/tvconnector/disp | head -n1'], s);
     dprim := Trim(s);
 
     //Узнаём резолюцию Primary Display
     RunCommand('/bin/bash', ['-c',
-      'cat ~/.config/tvconnector/list0 | grep "\*" | cut -f1 -d" "'], s);
+      'cat ~/.config/tvconnector/list0 | head -n1'], s);
     rprim := Trim(s);
 
     //Узнаём имя TV-дисплея
