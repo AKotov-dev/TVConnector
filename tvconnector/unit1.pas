@@ -181,8 +181,9 @@ begin
     //Создаём ярлык автозапуска для установки настроек TV при перезагрузке
     L.Add('[Desktop Entry]');
     L.Add('Name=TV-Display');
-    L.Add('Exec=/bin/bash -c ' + '''' + '[[ $(xrandr --listactivemonitors | grep -E "' +
-      dtv + '.*' + dprim + '") ]] && ' + command + '''');
+    L.Add('Exec=/bin/bash -c ' + '''' +
+      '[[ $(xrandr --listactivemonitors | tr -d [:cntrl:] | grep "' +
+      dtv + '" | grep "' + dprim + '") ]] && ' + command + '''');
     L.Add('Type=Application');
     L.Add('Categories=Utility');
     L.Add('Terminal=false');
