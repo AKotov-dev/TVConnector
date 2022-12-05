@@ -52,6 +52,7 @@ implementation
 
 { TMainForm }
 
+//Получение информации о дисплеях + вывод статистики
 procedure TMainForm.GetDisplayAndStatistic;
 var
   s: ansistring;
@@ -60,7 +61,7 @@ begin
   RunCommand('/bin/bash', ['-c', '"' + ExtractFileDir(Application.ExeName) +
     '/getprimary.sh' + '"'], s);
 
-  //Вывод списка мониторов, если Монитор только 1 - выход
+  //Вывод списка мониторов, если Монитор только 1 (т.е. "0:") - выход
   RunCommand('/bin/bash', ['-c', 'xrandr --listactivemonitors'], s);
   if Pos('1:', Trim(s)) = 0 then
   begin
@@ -70,9 +71,7 @@ begin
   Label1.Caption := Trim(s);
 
   //Имя вывода TV
-  RunCommand('/bin/bash', ['-c',
-    'xrandr --listactivemonitors | grep -ivE "mon|\*" | cut -f6 -d" "'], s);
-  MainForm.Caption := Application.Title + ' [' + Trim(s) + ']';
+  RunCommand('/bin/bash', ['-c', 'cat ~/.config/tvconnector/disp | tail -n1'], s);
   CheckBox1.Caption := SScaleTheDisplay + Trim(s);
 
   //Установка размеров формы
@@ -128,6 +127,8 @@ end;
 
 procedure TMainForm.FormShow(Sender: TObject);
 begin
+  MainForm.Caption := Application.Title;
+
   //Удаляем прежний список режимов TV
   DeleteFile(GetUserDir + '.config/tvconnector/disp');
   DeleteFile(GetUserDir + '.config/tvconnector/list0');

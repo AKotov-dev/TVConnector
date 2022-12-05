@@ -94,7 +94,7 @@ object MainForm: TMainForm
     Top = 122
     Width = 477
     BorderSpacing.Top = 2
-    Caption = '1. Make sure that the main display is selected correctly, it is marked'#10'    with a +* (see the list of monitors above)'#10'  '#10'2. If the TV screen does not fully display the contents of the main display'#10'    when zooming, press Apply again'
+    Caption = '1. Make sure that the main display is selected correctly, it is marked'#10'    with a +* (see the list of monitors above)'#10'  '#10'2. If the TV screen does not fully display the contents of the main display'#10'    when zooming, press "Apply" again'
     Font.Color = clGreen
     Font.Height = -13
     Font.Name = 'Sans'
