@@ -75,10 +75,6 @@ begin
   //Имя вывода TV
   RunCommand('/bin/bash', ['-c', 'cat ~/.config/tvconnector/disp | tail -n1'], s);
   CheckBox1.Caption := SScaleTheDisplay + Trim(s);
-
-  //Установка размеров формы
-  MainForm.Width := Label3.Left + Label3.Width + 50;
-  MainForm.Height := Label3.Top + Label3.Height + StaticText1.Height + 10;
 end;
 
 //Проверка Автостарта
@@ -132,6 +128,10 @@ end;
 procedure TMainForm.FormShow(Sender: TObject);
 begin
   MainForm.Caption := Application.Title;
+
+  //Установка размеров формы
+  MainForm.Width := Label3.Left + Label3.Width + 50;
+  MainForm.Height := Label3.Top + Label3.Height + StaticText1.Height + 10;
 
   //Удаляем прежний список режимов TV
   DeleteFile(GetUserDir + '.config/tvconnector/disp');

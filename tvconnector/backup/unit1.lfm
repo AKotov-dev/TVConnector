@@ -31,7 +31,7 @@ object MainForm: TMainForm
     Left = 421
     Height = 38
     Hint = 'Reset the settings of the secondary display'#10'and remove the Autostart shortcut'
-    Top = 91
+    Top = 92
     Width = 110
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 5
@@ -81,7 +81,7 @@ object MainForm: TMainForm
     AnchorSideBottom.Side = asrBottom
     Left = 8
     Height = 17
-    Top = 112
+    Top = 113
     Width = 40
     Anchors = [akLeft, akBottom]
     BorderSpacing.Top = 16
@@ -110,7 +110,7 @@ object MainForm: TMainForm
     AnchorSideRight.Side = asrBottom
     Left = 8
     Height = 10
-    Top = 136
+    Top = 137
     Width = 520
     Anchors = [akLeft, akRight]
     BorderSpacing.Left = 8
@@ -124,7 +124,7 @@ object MainForm: TMainForm
     Left = 421
     Height = 38
     Hint = 'Make another display the primary one and apply'
-    Top = 49
+    Top = 50
     Width = 110
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 5

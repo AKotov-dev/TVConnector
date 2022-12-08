@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 302
+  Left = 301
   Height = 258
-  Top = 124
+  Top = 123
   Width = 536
   Caption = 'TVConnector'
   ClientHeight = 258
