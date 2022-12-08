@@ -17,7 +17,7 @@ uses
 
 begin
   RequireDerivedFormResource:=True;
-  Application.Title:='TVConnector v0.3';
+  Application.Title:='TVConnector v0.4';
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TMainForm, MainForm);

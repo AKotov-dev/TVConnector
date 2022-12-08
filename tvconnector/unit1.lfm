@@ -1,11 +1,11 @@
 object MainForm: TMainForm
-  Left = 307
-  Height = 240
+  Left = 302
+  Height = 258
   Top = 124
-  Width = 501
+  Width = 536
   Caption = 'TVConnector'
-  ClientHeight = 240
-  ClientWidth = 501
+  ClientHeight = 258
+  ClientWidth = 536
   OnCreate = FormCreate
   OnShow = FormShow
   SessionProperties = 'CheckBox1.Checked;Top;Left'
@@ -13,11 +13,11 @@ object MainForm: TMainForm
   object ApplyBtn: TSpeedButton
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    Left = 388
-    Height = 35
+    Left = 421
+    Height = 38
     Hint = 'Apply and create an Autostart shortcut'
     Top = 8
-    Width = 108
+    Width = 110
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 5
     Caption = 'Apply'
@@ -28,11 +28,11 @@ object MainForm: TMainForm
   object ResetBtn: TSpeedButton
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    Left = 388
-    Height = 35
+    Left = 421
+    Height = 38
     Hint = 'Reset the settings of the secondary display'#10'and remove the Autostart shortcut'
-    Top = 90
-    Width = 108
+    Top = 92
+    Width = 110
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 5
     Caption = 'Reset'
@@ -43,8 +43,8 @@ object MainForm: TMainForm
   object StaticText1: TStaticText
     Left = 0
     Height = 20
-    Top = 220
-    Width = 501
+    Top = 238
+    Width = 536
     Align = alBottom
     BorderStyle = sbsSunken
     Caption = 'License: GPLv3   Author: alex_q_2000 (C) 2022   URL: https://linuxforum.ru'
@@ -55,12 +55,11 @@ object MainForm: TMainForm
     TabOrder = 1
   end
   object CheckBox1: TCheckBox
-    AnchorSideTop.Control = Label1
     AnchorSideTop.Side = asrBottom
     AnchorSideRight.Side = asrBottom
     Left = 8
     Height = 32
-    Top = 33
+    Top = 73
     Width = 133
     BorderSpacing.Top = 8
     Caption = 'Scale the display'
@@ -77,12 +76,14 @@ object MainForm: TMainForm
     ParentFont = False
   end
   object Label2: TLabel
-    AnchorSideTop.Control = CheckBox1
     AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = ResetBtn
+    AnchorSideBottom.Side = asrBottom
     Left = 8
     Height = 17
-    Top = 81
+    Top = 113
     Width = 40
+    Anchors = [akLeft, akBottom]
     BorderSpacing.Top = 16
     Caption = 'Label2'
   end
@@ -91,9 +92,9 @@ object MainForm: TMainForm
     AnchorSideTop.Side = asrBottom
     Left = 8
     Height = 85
-    Top = 122
+    Top = 147
     Width = 477
-    BorderSpacing.Top = 2
+    Anchors = [akLeft]
     Caption = '1. Make sure that the main display is selected correctly, it is marked'#10'    with a [0: +*] (see the list of monitors above)'#10'  '#10'2. If the TV screen does not fully display the contents of the main display'#10'    when zooming, press "Apply" again'
     Font.Color = clGreen
     Font.Height = -13
@@ -103,15 +104,15 @@ object MainForm: TMainForm
   end
   object Bevel1: TBevel
     AnchorSideLeft.Control = Owner
-    AnchorSideTop.Control = Label2
+    AnchorSideTop.Control = ResetBtn
     AnchorSideTop.Side = asrBottom
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     Left = 8
-    Height = 14
-    Top = 106
-    Width = 485
-    Anchors = [akTop, akLeft, akRight]
+    Height = 10
+    Top = 137
+    Width = 520
+    Anchors = [akLeft, akRight]
     BorderSpacing.Left = 8
     BorderSpacing.Top = 8
     BorderSpacing.Right = 8
@@ -120,11 +121,11 @@ object MainForm: TMainForm
   object ChangeBtn: TSpeedButton
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    Left = 388
-    Height = 35
+    Left = 421
+    Height = 38
     Hint = 'Make another display the primary one and apply'
-    Top = 49
-    Width = 108
+    Top = 50
+    Width = 110
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 5
     Caption = '< Change >'
@@ -134,7 +135,7 @@ object MainForm: TMainForm
   end
   object IniPropStorage1: TIniPropStorage
     StoredValues = <>
-    Left = 224
-    Top = 24
+    Left = 240
+    Top = 80
   end
 end

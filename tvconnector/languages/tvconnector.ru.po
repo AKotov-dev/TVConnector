@@ -95,3 +95,4 @@ msgstr "Второй монитор не найден!"
 #: unit1.sscalethedisplay
 msgid "Scale the display "
 msgstr "Масштабирование дисплея "
+
